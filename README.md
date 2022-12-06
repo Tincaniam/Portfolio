@@ -49,6 +49,5 @@ Delete a project
 DELETE https://portfolio.tincaniam.com/projects/'project_id'![UML class]
 Responds with 204 if the project is deleted, or 404 if it is not found.
 
-(https://user-images.githubusercontent.com/29785902/196291822-44257d29-5dad-451f-84c2-f63bf3e771fd.png)
+![UML class-3](https://user-images.githubusercontent.com/29785902/205784916-ee8da62d-0053-4571-885a-67cbc34820ff.png)
 
-![Uploading UML class.png…]()
