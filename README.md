@@ -1,4 +1,4 @@
-# portfolio-be
+# portFolio Back End
 The backend of the portFolio or :Folio project.
 
 This is an Express/NodeJS app that communicates over a REST API and stores data in a MongoDB database.
