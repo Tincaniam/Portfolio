@@ -7,6 +7,9 @@ It is hosted at https://portfolio.tincaniam.com/projects.
 
 It communicates with the following HTTP methods: GET, POST, PUT, DELETE
 
+To install, at the root directory, run:
+`npm install`
+
 # GET
 Get all projects
 GET https://portfolio.tincaniam.com/projects
