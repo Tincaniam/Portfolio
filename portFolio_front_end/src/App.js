@@ -17,6 +17,7 @@ import AboutProjectPage from './pages/AboutProjectPage';
 import AdvancedPage from './pages/AdvancedPage';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import ExamplePage from './pages/ExamplePage';
 
 function App() {
 
@@ -52,7 +53,7 @@ function App() {
           >
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:Folio
           </Typography>
-            <Link to="/about-project">
+            <Link to="/matttinnel">
               <IconButton
                 type="button"
                 edge="end"
@@ -60,13 +61,13 @@ function App() {
                 style={{
                   marginLeft: 20,
                 }}
-                aria-label="about-project"
+                aria-label="matttinnel"
               >
               <QuestionMarkIcon />
               </IconButton>
             </Link>
             <ReactTooltip delayShow={1000} id="aboutTip" place="top" effect="solid">
-              Learn more about :Folio.
+              See Matt Tinnel's portfolio page and learn more about :Folio.
             </ReactTooltip>
             <Link to="/advanced">
               <IconButton
@@ -119,6 +120,26 @@ function App() {
           <Route path="/edit-project">
             <EditProjectPage projectToEdit={projectToEdit}/>
           </Route>
+          <Route path="/matttinnel">
+            <ExamplePage />
+          </Route>
+
+          <Route path='/github-tincaniam' component={() => { 
+            window.location.href = 'https://github.com/tincaniam'; 
+            return null;
+          }}/>
+          <Route path='/github-portfolio' component={() => { 
+            window.location.href = 'https://github.com/tincaniam/Portfolio'; 
+            return null;
+          }}/>
+          <Route path='/github-interpyter' component={() => { 
+            window.location.href = 'https://github.com/tincaniam/Python-Web-Compiler'; 
+            return null;
+          }}/>
+          <Route path='/linkedin' component={() => { 
+            window.location.href = 'https://linkedin.com/in/matttinnel'; 
+            return null;
+          }}/>
           </div>
           <br></br>
           <br></br>

@@ -1,7 +1,8 @@
-import * as projects from './projects_model.mjs';
+import * as projects from './models/projects_model.mjs';
+import * as user from './controllers/userController.mjs';
 import express from 'express';
-import dotenv from 'dotenv'
-dotenv.config()
+import dotenv from 'dotenv';
+dotenv.config();
 
 const PORT = process.env.PORT;
 
@@ -183,6 +184,12 @@ app.get('/projects', (req, res) => {
             res.send({ error: 'Invalid request' });
         });
 });
+
+// login route.
+app.post('/login', user.loginUser);
+
+// signup route.
+app.post('/signup', user.signupUser);
 
 app.listen(PORT, () => {
     console.log(`Server listening on port ${PORT}...`);

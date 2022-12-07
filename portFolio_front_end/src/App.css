@@ -204,3 +204,19 @@ input.error {
   font-size: medium !important;
   border: 1px solid red;
 }
+
+.bodyCard {
+  background-color: '#4D4D4D';
+  min-width: '50%';
+  margin: '3%';
+  padding:'3%';
+}
+
+.exampleBody {
+  font-size: 14pt;
+  text-align: left;
+}
+
+.exampleImage {
+  max-width: 60%;
+}

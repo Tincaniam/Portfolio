@@ -173,3 +173,15 @@ GET http://localhost:3000/projects HTTP/1.1
 
 ### Request 20: Delete for non-existent ID. 404 status code
 DELETE http://localhost:3000/projects/6281b322c7c796ea344f05ee HTTP/1.1
+
+### Test user login. Should return: "logged in user"
+POST http://localhost:3000/login HTTP/1.1
+
+### Test user login. Should return: "signed up user"
+POST http://localhost:3000/signup HTTP/1.1
+content-type: application/json
+
+{
+    "email": "email@email.com",
+    "password": "goodpassword"
+}
